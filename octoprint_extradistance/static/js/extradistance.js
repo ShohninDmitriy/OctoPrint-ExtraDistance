@@ -8,8 +8,9 @@ $(function() {
         
         self.control = parameters[0];
 
-        self.control.distances1 = ko.observableArray([0.01, 0.05, 0.1, 1, 10]);
-        self.control.distances2 = ko.observableArray([5, 50, 100, 150]);
+        self.control.distances1 = ko.observableArray([0.01, 0.05, 0.1, 0.15]);
+        self.control.distances2 = ko.observableArray([1, 5, 10, 15]);
+		self.control.distances3 = ko.observableArray([50, 100, 150]);
 
         if ($("#touch body").length == 0) {
             $(".jog-panel .distance").remove();
@@ -24,7 +25,12 @@ $(function() {
                     <!-- ko foreach: distances2 -->\
                         <button type=\"button\" class=\"btn distance\" data-bind=\"enable: $root.isOperational() && !$root.isPrinting() && $root.loginState.isUser(), text: $data, click: function() { $root.distance($data) }, css: { active: $root.distance() === $data }, attr: { id: 'control-distance' + $root.stripDistanceDecimal($data) }\"></button>\
                     <!-- /ko -->\
-                </div>\
+					</div>\
+					<div class=\"btn-group\" data-toggle=\"buttons-radio\" id=\"jog_distance3\">\
+                    <!-- ko foreach: distances3 -->\
+                        <button type=\"button\" class=\"btn distance\" data-bind=\"enable: $root.isOperational() && !$root.isPrinting() && $root.loginState.isUser(), text: $data, click: function() { $root.distance($data) }, css: { active: $root.distance() === $data }, attr: { id: 'control-distance' + $root.stripDistanceDecimal($data) }\"></button>\
+                    <!-- /ko -->\
+					</div>\
                 </div>\
             ");
         }
