@@ -8,7 +8,7 @@ $(function() {
         
         self.control = parameters[0];
 
-        self.control.distances1 = ko.observableArray([0.01, 0.1, 1, 10]);
+        self.control.distances1 = ko.observableArray([0.01, 0.05, 0.1, 1, 10]);
         self.control.distances2 = ko.observableArray([5, 50, 100, 150]);
 
         if ($("#touch body").length == 0) {
