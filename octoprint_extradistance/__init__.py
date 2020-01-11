@@ -38,12 +38,12 @@ class ExtraDistancePlugin(octoprint.plugin.SettingsPlugin,
 
 				# version check: github repository
 				type="github_release",
-				user="ntoff",
+				user="ShohninDmitriy",
 				repo="OctoPrint-ExtraDistance",
 				current=self._plugin_version,
 
 				# update method: pip
-				pip="https://github.com/ntoff/OctoPrint-ExtraDistance/archive/{target_version}.zip"
+				pip="https://github.com/ShohninDmitriy/OctoPrint-ExtraDistance/archive/{target_version}.zip"
 			)
 		)
 

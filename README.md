@@ -9,5 +9,5 @@ Adds more buttons to the movement distance section
 Install ~~via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager)
 or~~ manually using this URL:
 
-    https://github.com/ntoff/OctoPrint-ExtraDistance/archive/master.zip
+    https://github.com/ShohninDmitriy/OctoPrint-ExtraDistance/archive/master.zip
 
