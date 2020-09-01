@@ -7,7 +7,7 @@ plugin_package = "octoprint_extradistance"
 
 plugin_name = "OctoPrint-ExtraDistance"
 
-plugin_version = "0.2.0"
+plugin_version = "0.2.0.1"
 
 plugin_description = """Adds extra movement distance buttons."""
 
